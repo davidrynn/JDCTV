@@ -46,7 +46,8 @@ class DRCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        collectionView?.delegate = self
+        collectionView?.dataSource = self
         // Register cell classes
         collectionView!.registerClass(DRCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
@@ -155,7 +156,54 @@ class DRCollectionViewController: UICollectionViewController {
 
         return cell
     }
-
+    //MARK: UICollectionViewDelegateFlowLayout
+//    func collectionView(collectionView: UICollectionView,
+//        layout collectionViewLayout: UICollectionViewLayout,
+//        minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat{
+//    
+//            return 5.0
+//    }
+    
+   func collectionView(collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+            let frameWidth = collectionView.frame.size.width
+            
+            if indexPath.row%3 == 0 {
+            
+               let width = frameWidth-50.0
+                return CGSizeMake(width/7, width/7)
+            
+            }
+            
+            return CGSizeMake((frameWidth/20)-25, (frameWidth/20)-25)
+            
+    }
+    
+    func collectionView(collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+           return UIEdgeInsetsMake(0, 25, 0, 25)
+    }
+    
+    //MARK: ScrollView Delegate
+    override func scrollViewWillEndDragging(scrollView: UIScrollView,
+        withVelocity velocity: CGPoint,
+        targetContentOffset: UnsafeMutablePointer<CGPoint>){
+    
+            let contentOffsetWhenFullyScrolledBottom = collectionView!.contentSize.height-collectionView!.frame.size.height-64
+            
+            if velocity.y<0 && targetContentOffset.memory.y < 0 {
+                let newIndexPath = NSIndexPath(forItem: 34, inSection: 0)
+                collectionView?.scrollToItemAtIndexPath(newIndexPath, atScrollPosition: UICollectionViewScrollPosition.Top, animated: false)
+            }
+            
+            if velocity.y>0 && targetContentOffset.memory.y > contentOffsetWhenFullyScrolledBottom {
+                let newIndexPath = NSIndexPath(forItem: 2, inSection: 0)
+                collectionView?.scrollToItemAtIndexPath(newIndexPath, atScrollPosition: UICollectionViewScrollPosition.Top, animated: false)
+            }
+            
+    }
 
     // MARK: UICollectionViewDelegate
 

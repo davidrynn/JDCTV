@@ -13,8 +13,35 @@
 		2205FCB41BF0251A00D80DF8 /* DRCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205FCAF1BF0251A00D80DF8 /* DRCollectionViewCell.swift */; };
 		2205FCB51BF0251A00D80DF8 /* DRAPIUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205FCB01BF0251A00D80DF8 /* DRAPIUtility.swift */; };
 		2205FCB61BF0251A00D80DF8 /* DRKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205FCB11BF0251A00D80DF8 /* DRKeys.swift */; };
+		2205FCC11BF0F3F200D80DF8 /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2205FCC01BF0F3F200D80DF8 /* TVServices.framework */; };
+		2205FCC41BF0F3F200D80DF8 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205FCC31BF0F3F200D80DF8 /* ServiceProvider.swift */; };
+		2205FCC81BF0F3F200D80DF8 /* JDCPreview.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2205FCBF1BF0F3F200D80DF8 /* JDCPreview.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		22A66BE31BF01FEB007467AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A66BE21BF01FEB007467AA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2205FCC61BF0F3F200D80DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A66BD01BF01FEA007467AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2205FCBE1BF0F3F200D80DF8;
+			remoteInfo = JDCPreview;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2205FCCC1BF0F3F200D80DF8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2205FCC81BF0F3F200D80DF8 /* JDCPreview.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2205FCAC1BF0251A00D80DF8 /* JDCTV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JDCTV-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -23,6 +50,10 @@
 		2205FCAF1BF0251A00D80DF8 /* DRCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRCollectionViewCell.swift; sourceTree = "<group>"; };
 		2205FCB01BF0251A00D80DF8 /* DRAPIUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRAPIUtility.swift; sourceTree = "<group>"; };
 		2205FCB11BF0251A00D80DF8 /* DRKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRKeys.swift; sourceTree = "<group>"; };
+		2205FCBF1BF0F3F200D80DF8 /* JDCPreview.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JDCPreview.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2205FCC01BF0F3F200D80DF8 /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
+		2205FCC31BF0F3F200D80DF8 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		2205FCC51BF0F3F200D80DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A66BD81BF01FEA007467AA /* JDCTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDCTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A66BE21BF01FEB007467AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A66BE41BF01FEB007467AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +63,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2205FCBC1BF0F3F200D80DF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2205FCC11BF0F3F200D80DF8 /* TVServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22A66BD51BF01FEA007467AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,10 +118,20 @@
 			name = "API Classes";
 			sourceTree = "<group>";
 		};
+		2205FCC21BF0F3F200D80DF8 /* JDCPreview */ = {
+			isa = PBXGroup;
+			children = (
+				2205FCC31BF0F3F200D80DF8 /* ServiceProvider.swift */,
+				2205FCC51BF0F3F200D80DF8 /* Info.plist */,
+			);
+			path = JDCPreview;
+			sourceTree = "<group>";
+		};
 		22A66BCF1BF01FEA007467AA = {
 			isa = PBXGroup;
 			children = (
 				22A66BDA1BF01FEA007467AA /* JDCTV */,
+				2205FCC21BF0F3F200D80DF8 /* JDCPreview */,
 				22A66BD91BF01FEA007467AA /* Products */,
 				D63C97BAA83AD1D336B2CBB9 /* Pods */,
 				E9608AF1BFFCC8152F46357F /* Frameworks */,
@@ -93,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				22A66BD81BF01FEA007467AA /* JDCTV.app */,
+				2205FCBF1BF0F3F200D80DF8 /* JDCPreview.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				5843D427B05110D6704CCCA5 /* Pods.framework */,
+				2205FCC01BF0F3F200D80DF8 /* TVServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +179,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2205FCBE1BF0F3F200D80DF8 /* JDCPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2205FCC91BF0F3F200D80DF8 /* Build configuration list for PBXNativeTarget "JDCPreview" */;
+			buildPhases = (
+				2205FCBB1BF0F3F200D80DF8 /* Sources */,
+				2205FCBC1BF0F3F200D80DF8 /* Frameworks */,
+				2205FCBD1BF0F3F200D80DF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDCPreview;
+			productName = JDCPreview;
+			productReference = 2205FCBF1BF0F3F200D80DF8 /* JDCPreview.appex */;
+			productType = "com.apple.product-type.tv-app-extension";
+		};
 		22A66BD71BF01FEA007467AA /* JDCTV */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22A66BE71BF01FEB007467AA /* Build configuration list for PBXNativeTarget "JDCTV" */;
@@ -138,10 +206,12 @@
 				22A66BD61BF01FEA007467AA /* Resources */,
 				CF9769B18FC5F945FFDF0855 /* Embed Pods Frameworks */,
 				69AD4DD9C5D51DA730F74672 /* Copy Pods Resources */,
+				2205FCCC1BF0F3F200D80DF8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2205FCC71BF0F3F200D80DF8 /* PBXTargetDependency */,
 			);
 			name = JDCTV;
 			productName = JDCTV;
@@ -158,6 +228,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "David Rynn";
 				TargetAttributes = {
+					2205FCBE1BF0F3F200D80DF8 = {
+						CreatedOnToolsVersion = 7.1;
+					};
 					22A66BD71BF01FEA007467AA = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -177,11 +250,19 @@
 			projectRoot = "";
 			targets = (
 				22A66BD71BF01FEA007467AA /* JDCTV */,
+				2205FCBE1BF0F3F200D80DF8 /* JDCPreview */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2205FCBD1BF0F3F200D80DF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22A66BD61BF01FEA007467AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +322,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2205FCBB1BF0F3F200D80DF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2205FCC41BF0F3F200D80DF8 /* ServiceProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22A66BD41BF01FEA007467AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,7 +344,39 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2205FCC71BF0F3F200D80DF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2205FCBE1BF0F3F200D80DF8 /* JDCPreview */;
+			targetProxy = 2205FCC61BF0F3F200D80DF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2205FCCA1BF0F3F200D80DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = JDCPreview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.JDCTV.JDCPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2205FCCB1BF0F3F200D80DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = JDCPreview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.JDCTV.JDCPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		22A66BE51BF01FEB007467AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -345,6 +466,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = JDCTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.JDCTV;
@@ -362,6 +484,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = JDCTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.JDCTV;
@@ -373,6 +496,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2205FCC91BF0F3F200D80DF8 /* Build configuration list for PBXNativeTarget "JDCPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2205FCCA1BF0F3F200D80DF8 /* Debug */,
+				2205FCCB1BF0F3F200D80DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		22A66BD31BF01FEA007467AA /* Build configuration list for PBXProject "JDCTV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
