@@ -104,8 +104,8 @@
 				22A66BE41BF01FEB007467AA /* Info.plist */,
 				2205FCAC1BF0251A00D80DF8 /* JDCTV-Bridging-Header.h */,
 				2205FCB11BF0251A00D80DF8 /* DRKeys.swift */,
-				22A66BE21BF01FEB007467AA /* Assets.xcassets */,
 				2205FCAD1BF0251A00D80DF8 /* AppDelegate.swift */,
+				22A66BE21BF01FEB007467AA /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -361,7 +361,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.JDCTV.JDCPreview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -373,7 +373,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.JDCTV.JDCPreview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
@@ -503,6 +503,7 @@
 				2205FCCB1BF0F3F200D80DF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22A66BD31BF01FEA007467AA /* Build configuration list for PBXProject "JDCTV" */ = {
 			isa = XCConfigurationList;
