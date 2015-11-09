@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22A66BDC1BF01FEA007467AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A66BDB1BF01FEA007467AA /* AppDelegate.swift */; };
-		22A66BDE1BF01FEA007467AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A66BDD1BF01FEA007467AA /* ViewController.swift */; };
-		22A66BE11BF01FEA007467AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A66BDF1BF01FEA007467AA /* Main.storyboard */; };
+		07F9902F14E11E9002B1A05B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5843D427B05110D6704CCCA5 /* Pods.framework */; };
+		2205FCB21BF0251A00D80DF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205FCAD1BF0251A00D80DF8 /* AppDelegate.swift */; };
+		2205FCB31BF0251A00D80DF8 /* DRCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205FCAE1BF0251A00D80DF8 /* DRCollectionViewController.swift */; };
+		2205FCB41BF0251A00D80DF8 /* DRCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205FCAF1BF0251A00D80DF8 /* DRCollectionViewCell.swift */; };
+		2205FCB51BF0251A00D80DF8 /* DRAPIUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205FCB01BF0251A00D80DF8 /* DRAPIUtility.swift */; };
+		2205FCB61BF0251A00D80DF8 /* DRKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205FCB11BF0251A00D80DF8 /* DRKeys.swift */; };
 		22A66BE31BF01FEB007467AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A66BE21BF01FEB007467AA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2205FCAC1BF0251A00D80DF8 /* JDCTV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JDCTV-Bridging-Header.h"; sourceTree = "<group>"; };
+		2205FCAD1BF0251A00D80DF8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2205FCAE1BF0251A00D80DF8 /* DRCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRCollectionViewController.swift; sourceTree = "<group>"; };
+		2205FCAF1BF0251A00D80DF8 /* DRCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRCollectionViewCell.swift; sourceTree = "<group>"; };
+		2205FCB01BF0251A00D80DF8 /* DRAPIUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRAPIUtility.swift; sourceTree = "<group>"; };
+		2205FCB11BF0251A00D80DF8 /* DRKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRKeys.swift; sourceTree = "<group>"; };
 		22A66BD81BF01FEA007467AA /* JDCTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDCTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		22A66BDB1BF01FEA007467AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22A66BDD1BF01FEA007467AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		22A66BE01BF01FEA007467AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22A66BE21BF01FEB007467AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A66BE41BF01FEB007467AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34576086E360A2FD24047245 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5843D427B05110D6704CCCA5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2BB0FD3DA90D5A4B146113 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +36,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F9902F14E11E9002B1A05B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2205FCB71BF088AE00D80DF8 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				2205FCAF1BF0251A00D80DF8 /* DRCollectionViewCell.swift */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		2205FCB81BF088C400D80DF8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2205FCAE1BF0251A00D80DF8 /* DRCollectionViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		2205FCB91BF0890D00D80DF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22A66BE41BF01FEB007467AA /* Info.plist */,
+				2205FCAC1BF0251A00D80DF8 /* JDCTV-Bridging-Header.h */,
+				2205FCB11BF0251A00D80DF8 /* DRKeys.swift */,
+				22A66BE21BF01FEB007467AA /* Assets.xcassets */,
+				2205FCAD1BF0251A00D80DF8 /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2205FCBA1BF0892800D80DF8 /* API Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2205FCB01BF0251A00D80DF8 /* DRAPIUtility.swift */,
+			);
+			name = "API Classes";
+			sourceTree = "<group>";
+		};
 		22A66BCF1BF01FEA007467AA = {
 			isa = PBXGroup;
 			children = (
 				22A66BDA1BF01FEA007467AA /* JDCTV */,
 				22A66BD91BF01FEA007467AA /* Products */,
+				D63C97BAA83AD1D336B2CBB9 /* Pods */,
+				E9608AF1BFFCC8152F46357F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,13 +100,29 @@
 		22A66BDA1BF01FEA007467AA /* JDCTV */ = {
 			isa = PBXGroup;
 			children = (
-				22A66BDB1BF01FEA007467AA /* AppDelegate.swift */,
-				22A66BDD1BF01FEA007467AA /* ViewController.swift */,
-				22A66BDF1BF01FEA007467AA /* Main.storyboard */,
-				22A66BE21BF01FEB007467AA /* Assets.xcassets */,
-				22A66BE41BF01FEB007467AA /* Info.plist */,
+				2205FCBA1BF0892800D80DF8 /* API Classes */,
+				2205FCB71BF088AE00D80DF8 /* Custom Views */,
+				2205FCB91BF0890D00D80DF8 /* Supporting Files */,
+				2205FCB81BF088C400D80DF8 /* ViewController */,
 			);
 			path = JDCTV;
+			sourceTree = "<group>";
+		};
+		D63C97BAA83AD1D336B2CBB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34576086E360A2FD24047245 /* Pods.debug.xcconfig */,
+				CD2BB0FD3DA90D5A4B146113 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9608AF1BFFCC8152F46357F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5843D427B05110D6704CCCA5 /* Pods.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22A66BE71BF01FEB007467AA /* Build configuration list for PBXNativeTarget "JDCTV" */;
 			buildPhases = (
+				DEC1D3E1A7B51E1B99DC8289 /* Check Pods Manifest.lock */,
 				22A66BD41BF01FEA007467AA /* Sources */,
 				22A66BD51BF01FEA007467AA /* Frameworks */,
 				22A66BD61BF01FEA007467AA /* Resources */,
+				CF9769B18FC5F945FFDF0855 /* Embed Pods Frameworks */,
+				69AD4DD9C5D51DA730F74672 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,34 +187,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A66BE31BF01FEB007467AA /* Assets.xcassets in Resources */,
-				22A66BE11BF01FEA007467AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69AD4DD9C5D51DA730F74672 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF9769B18FC5F945FFDF0855 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEC1D3E1A7B51E1B99DC8289 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22A66BD41BF01FEA007467AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A66BDE1BF01FEA007467AA /* ViewController.swift in Sources */,
-				22A66BDC1BF01FEA007467AA /* AppDelegate.swift in Sources */,
+				2205FCB31BF0251A00D80DF8 /* DRCollectionViewController.swift in Sources */,
+				2205FCB61BF0251A00D80DF8 /* DRKeys.swift in Sources */,
+				2205FCB51BF0251A00D80DF8 /* DRAPIUtility.swift in Sources */,
+				2205FCB21BF0251A00D80DF8 /* AppDelegate.swift in Sources */,
+				2205FCB41BF0251A00D80DF8 /* DRCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		22A66BDF1BF01FEA007467AA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22A66BE01BF01FEA007467AA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		22A66BE51BF01FEB007467AA /* Debug */ = {
@@ -233,25 +339,34 @@
 		};
 		22A66BE81BF01FEB007467AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34576086E360A2FD24047245 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JDCTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.JDCTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JDCTV/JDCTV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		22A66BE91BF01FEB007467AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD2BB0FD3DA90D5A4B146113 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JDCTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.JDCTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JDCTV/JDCTV-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -274,6 +389,7 @@
 				22A66BE91BF01FEB007467AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  JDCTV
+//  JDCSwiftTV
 //
-//  Created by David Rynn on 11/8/15.
+//  Created by David Rynn on 11/7/15.
 //  Copyright © 2015 David Rynn. All rights reserved.
 //
 
@@ -12,10 +12,21 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var collectionView: UICollectionView!
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let navigationController: UINavigationController = UINavigationController(rootViewController: DRCollectionViewController())
+        let navigationBar: UINavigationBar = navigationController.navigationBar
+        navigationBar.barTintColor = UIColor(red: 0.51, green: 0.00, blue: 1.00, alpha: 1.0)
+//        navigationBar.barStyle = UIBarStyleBlackOpaque
+        self.window!.rootViewController = navigationController
+        self.window!.backgroundColor = UIColor.whiteColor()
+        self.window!.makeKeyAndVisible()
+
         return true
     }
 
