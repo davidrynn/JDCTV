@@ -32,7 +32,6 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
         item2?.imageShape = TVContentItemImageShape.Square
         return [item1!, item2!]
     }
-    
 
 }
 

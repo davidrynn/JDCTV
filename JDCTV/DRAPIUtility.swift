@@ -12,7 +12,6 @@ typealias imageClosure = (UIImage, NSIndexPath) -> Void
 import UIKit
 import Alamofire
 
-
 class DRAPIUtility: NSObject {
     func getImages(fromPage pageNumber: Int,
         withImageClosure imageClosure:((UIImage, NSIndexPath) -> Void)?, andCompletionHandler completion:(()->Void)?){
@@ -27,7 +26,6 @@ class DRAPIUtility: NSObject {
             
             let instagramURL = NSURL(string: "https://api.instagram.com/v1/tags/jetdotcom/media/recent?client_id=" + Constants.Keys.CLIENT_ID + "&count=33")
             
-
             let request = NSURLRequest(URL: instagramURL!)
             
             Alamofire.request(request).responseJSON{ response in
@@ -47,16 +45,8 @@ class DRAPIUtility: NSObject {
                         imageClosure!(image, indexPath)
                         
                     }
-                
                 }
-                
-                
-
             }
-            
-
-            
     }
-    
-  
+ 
 }
