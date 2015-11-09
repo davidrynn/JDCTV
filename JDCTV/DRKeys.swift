@@ -10,7 +10,7 @@ import UIKit
 
 struct Constants {
     struct Keys {
-        
+        //would not include
         static let CLIENT_ID = "4f5b5140916040c7afa2a120d4586932"
         static let CLIENT_SECRET = "b421f9b8a2df46bbb161f63bf1e48d1f"
     }
